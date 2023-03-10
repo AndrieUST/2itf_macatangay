@@ -51,7 +51,7 @@
         $monthtax = (30000 + ($annual - 400000) * 0.25)/12;
     }
     else if(800000 <= $annual && $annual < 2000000){
-        $anntax = 130000 + 12 * (($annual - 800000) * 0.3);
+        $anntax = 130000 + (($annual - 800000) * 0.3);
         $monthtax = (130000 + ($annual - 800000) * 0.3)/12;
     }
     else if(2000000 <= $annual && $annual < 8000000){
@@ -59,8 +59,8 @@
         $monthtax = (490000 + ($annual - 2000000) * 0.32)/12;
     }
     else if(8000000 <= $annual){
-        $anntax = 2410000 + 12 * (($annual - 8000000) * 0.35);
-        $monthtax = (2410000 + ($annual - 80000000) * 0.35)/12;
+        $anntax = 2410000 + (($annual - 8000000) * 0.35);
+        $monthtax = (2410000 + ($annual - 8000000) * 0.35)/12;
     }
     else{
         alert("Please type an appropriate input.");
